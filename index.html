@@ -8,16 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Cool Web</title>
+    <title>RPS</title>
 </head>
 
 <body>
     <header>
-        <h1>Cool Web Project</h1>
+        <h1>Rock, Paper, Scissors</h1>
     </header>
-    
-    <main>
 
+    <main>
+        <h2>Choose a Throw</h2>
+        <section class="throws">
+            <button class="throw" id="rock-throw">
+                <img src="assets/images/rock.jpeg" alt="rock">
+            </button>
+            <button class="throw" id="paper-throw">
+                <img src="assets/images/paper.jpeg" alt="paper">
+            </button>
+            <button class="throw" id="scissors-throw">
+                <img src="assets/images/scissors.jpeg" alt="scissors">
+            </button>
+        </section>
+
+        <div id="results" class="hidden">
+            <h2>Result</h2>
+            <section class="throws">
+                <div class="result">
+                    <h3>player</h3>
+                    <div class="throw">
+                        <img id="player-throw" src="assets/images/rock.jpeg" alt="rock">
+                    </div>
+                </div>
+                <div class="result">
+                    <h3>vs</h3>
+                    <div class="throw">
+                        <img id="result-image" src="assets/images/computer.jpeg" alt="rock">
+                    </div>
+                </div>
+                <div class="result">
+                    <h3>computer</h3>
+                    <div class="throw">
+                        <img id="computer-throw" src="assets/images/paper.jpeg" alt="rock">
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     
     <footer>
